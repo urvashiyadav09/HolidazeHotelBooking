@@ -1,0 +1,53 @@
+{
+  "name": "hotelbooking",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "bootstrap-select": "^1.13.17",
+    "gulp": "^4.0.2",
+    "gulp-minify": "^3.1.0",
+    "gulp-react": "^4.0.0",
+    "moment": "^2.26.0",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
+    "react-confirm-alert": "^2.6.1",
+    "react-datepicker": "^3.0.0",
+    "react-dom": "^16.13.1",
+    "react-fluid-container": "^0.6.0",
+    "react-hook-form": "^5.7.2",
+    "react-iframe": "^1.8.0",
+    "react-image": "^4.0.1",
+    "react-moment": "^0.9.7",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-select": "^3.1.0",
+    "sass": "^1.26.5",
+    "styled-components": "^5.1.1",
+    "webkit-npm": "^3.1.1",
+    "yup": "^0.29.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
