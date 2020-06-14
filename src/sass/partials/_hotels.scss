@@ -1,0 +1,506 @@
+.loadingSpinner{
+    margin-left: 50%;
+    margin-top: 10%;
+    margin-bottom: 29.5%;
+}
+
+.HotelsSearch{
+
+    &__searchForm{
+        padding-left: 9rem;
+        padding-top: 0.8rem;
+        float: left;
+        width: 69%;
+    }
+
+    &__searchBtn{
+        //border:1px solid red;
+        float: right;
+        width: 31%;
+        padding-top: 0.8rem;
+    }
+}
+.allHotels{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        border:4px solid $ContainerBorderColor;
+        background: $ContainerBackgroundColor;
+
+        &__accomodationHeading{
+            &--headingMain{
+                font-family: $Headingfont-family;
+                font-size: 2em; 
+            }
+        
+        }
+
+        &__Hotelgroup{
+                      
+            &__groupHotelDisplay{
+                margin-left:4rem;
+                margin-top: 2rem;
+                height: 50%;
+                background: $cardBackgroundColor;
+                border: none;
+                width: 85%;
+
+                &__displayDiv{
+                    padding-bottom: 1.3rem;
+                display: inline-block;
+                    
+                &__img{
+                    max-height: 100%;
+                    max-width: 35%;
+                    float:left;
+                    overflow:hidden;
+                }
+                &__text{
+                    float:right;
+                    width:60%;
+                    text-align: left; 
+                    font-family: $Paragraphfont-family;
+                    word-spacing: 0.2rem;
+                    font-size: 1.1em; 
+                    color: $sliderTextColor;
+                    
+                    &--detailLink{
+                        font-weight: bold;
+                        color: $cardButtonTextColor;
+                        font-family: $Headingfont-family;
+                        letter-spacing: 0.1rem;
+                    }
+                }
+        
+            }
+
+        }
+    }
+    
+}
+
+
+///MEDIA QUERY/////////
+@media (max-width:1024px) {
+    .loadingSpinner{
+        margin-left: 50%;
+        margin-top: 30%;
+        margin-bottom: 82.6%;
+    }
+
+    .HotelsSearch{
+
+        &__searchForm{
+            padding-left: 5rem;
+                float: left;
+                width: 70%; 
+
+            &--label{
+                height: 3rem;
+            }
+        }
+    
+        &__searchBtn{
+            float: right;
+            width: 30%;
+            padding-top: 0.8rem;
+        }
+    }
+
+    .allHotels{
+        padding-top: 3rem;
+
+        &__accomodationHeading{
+            padding-left: 0rem;
+
+            &--headingMain{
+                font-size: 2.8em;
+            }
+            
+        }
+        
+        &__Hotelgroup{
+           padding-top: 0rem;
+
+            &__groupHotelDisplay{
+                margin-left:0rem;
+                width: 100%;
+
+                &__displayDiv{
+                    padding-bottom: 1.5rem;
+                                        
+                    &__img{
+                        max-width: 40%;
+                    }
+
+                    &__text{
+                        width:55%;
+                        font-size: 1.6em; 
+                    }
+        
+                }
+
+            }
+        }
+    }    
+
+}
+
+
+@media (max-width:768px) {
+    .loadingSpinner{
+        margin-top: 50%;
+        margin-bottom: 70%;
+    }
+
+    .HotelsSearch{
+
+        &__searchForm{
+            padding-left: 0rem;
+            padding-top: 0.8rem;
+            float: left;
+            width: 70%; 
+        }
+    
+        &__searchBtn{
+            float: right;
+            width: 30%;
+            padding-top: 0.8rem;
+        }
+    }
+
+    .allHotels{
+        padding-top: 0rem;
+
+        &__accomodationHeading{
+            padding-left: 2rem;
+            padding-top: 2rem;
+
+            &--headingMain{
+                font-size: 2em;
+            }
+        } 
+        
+
+        &__Hotelgroup{
+                padding-top: 0rem;
+
+            &__groupHotelDisplay{
+                margin-left: 2rem;
+                margin-top: 1rem;
+                height: 60%;
+                width: 90%;
+
+                &__displayDiv{
+                    padding-bottom: 1rem;
+                    display: block;
+                    
+                    &__img{
+                        padding-left: 2rem;                    
+                        max-width: 90%;
+                        float:none;
+                        overflow:hidden;
+                    }
+                    &__text{
+                        float:none;
+                        width:100%;
+                        padding-top: 1.2rem;
+                        font-size: 1em;
+                        padding-left: 2rem;
+                    }
+                }    
+                                        
+            }
+        }
+    }
+    
+}
+
+
+@media (max-width:414px) {
+
+    .loadingSpinner{
+        margin-top: 50%;
+        margin-bottom: 77%;
+    }
+
+    .HotelsSearch{
+
+        &__searchForm{
+            padding-left: 0rem;
+            padding-top: 0.8rem;
+            float: left;
+            width: 70%; 
+
+            &--label{
+                height: 2.4rem;
+            }
+        }
+    
+        &__searchBtn{
+            float: right;
+                width: 30%;
+                padding-top: 0.8rem;
+        }
+    }
+
+    .allHotels{
+        padding-top: 0rem;
+
+        &__accomodationHeading{
+            padding-left: 0rem;
+            padding-top: 1rem;
+
+            &--headingMain{
+                font-size: 1.5em;
+            }
+
+        } 
+        
+        &__Hotelgroup{
+               padding-top: 0rem;       
+            &__groupHotelDisplay{
+                margin-left: 0rem;
+                margin-top: 1rem;
+                height: 80%;
+                width: 100%;
+                &__displayDiv{
+                    padding-bottom: 1rem;
+                    display: block;
+                    
+                    &__img{
+                        max-height: 100%;
+                        max-width: 100%;
+                        float:none;
+                        overflow:hidden;
+                        padding-left: 0rem;
+                    }
+                    &__text{
+                        float:none;
+                        width:100%;
+                        padding-top: 1rem;
+                        font-size: 1em;
+                        padding-left: 0rem;
+                    }
+                }    
+                                        
+            }
+        }
+    }
+
+}
+
+@media (max-width:411px) {
+
+    .loadingSpinner{
+        margin-top: 50%;
+        margin-bottom: 70%;
+    }
+
+    .HotelsSearch{
+
+        &__searchForm{
+            padding-left: 0rem;
+            padding-top: 0.8rem;
+            float: left;
+            width: 70%;
+            
+            &--label{
+                height: 2.5rem;
+            }
+        }
+    
+        &__searchBtn{
+            float: right;
+            width: 30%;
+            padding-top: 0.8rem;
+        }
+    }
+
+    .allHotels{
+        padding-top: 0rem;
+
+        &__accomodationHeading{
+            padding-left: 0rem;
+            padding-top: 1rem;
+
+            &--headingMain{
+                font-size: 1.5em;
+            }
+            
+        } 
+        
+        &__Hotelgroup{
+                padding-top: 0rem;
+
+            &__groupHotelDisplay{
+                margin-left: 0rem;
+                margin-top: 1rem;
+                height: 80%;
+                width: 100%;
+                &__displayDiv{
+                    padding-bottom: 1rem;
+                    display: block;
+                    
+                    &__img{
+                        max-height: 100%;
+                        max-width: 100%;
+                        float:none;
+                        overflow:hidden;
+                    }
+                    &__text{
+                        float:none;
+                        width:100%;
+                        padding-top: 1rem;
+                        font-size: 1em;
+                    }
+                }    
+                                        
+            }
+        }
+    }
+
+}
+
+@media (max-width:360px) {
+    .loadingSpinner{
+        margin-top: 50%;
+        margin-bottom: 70%;
+    }
+
+    .HotelsSearch{
+
+        &__searchForm{
+            padding-left: 0rem;
+            padding-top: 0.8rem;
+            float: left;
+            width: 70%;
+
+            &--label{
+                height: 2.5rem;
+            }
+        }
+    
+        &__searchBtn{
+            float: right;
+            width: 30%;
+            padding-top: 0.8rem;
+        }
+    }
+
+    .allHotels{
+        padding-top: 0rem;
+
+        &__accomodationHeading{
+            padding-left: 0rem;
+            padding-top: 1rem;
+
+            &--headingMain{
+                font-size: 1.5em;
+            } 
+        } 
+        
+        &__Hotelgroup{
+                      
+            &__groupHotelDisplay{
+                margin-left: 0rem;
+                margin-top: 1rem;
+                height: 80%;
+                width: 100%;
+                &__displayDiv{
+                    padding-bottom: 1rem;
+                    display: block;
+                    
+                    &__img{
+                        max-height: 100%;
+                        max-width: 100%;
+                        float:none;
+                        overflow:hidden;
+                    }
+                    &__text{
+                        float:none;
+                        width:100%;
+                        padding-top: 1rem;
+                        font-size: 1em;
+                    }
+                }    
+                                        
+            }
+        }
+    }
+
+}
+
+
+@media (max-width:320px) {
+    .loadingSpinner{
+        margin-top: 50%;
+        margin-bottom: 70%;
+    }
+
+    .HotelsSearch{
+
+        &__searchForm{
+            padding-left: 0rem;
+            padding-top: 0.8rem;
+            float: left;
+            width: 70%;
+
+            &--label{
+                height: 2.5rem;
+            }
+        }
+    
+        &__searchBtn{
+            float: right;
+            width: 30%;
+            padding-top: 0.8rem;
+        }
+    }
+
+    .allHotels{
+        padding-top: 0rem;
+
+        &__accomodationHeading{
+            padding-left: 0rem;
+            padding-top: 1rem;
+
+            &--headingMain{
+                font-size: 1.5em;
+            }
+        } 
+         
+
+        &__Hotelgroup{
+                      
+            &__groupHotelDisplay{
+                margin-left: 0rem;
+                margin-top: 1rem;
+                height: 80%;
+                width: 100%;
+
+                &__displayDiv{
+                    padding-bottom: 1rem;
+                    display: block;
+                    
+                    &__img{
+                        max-height: 100%;
+                        max-width: 100%;
+                        float:none;
+                        overflow:hidden;
+                    }
+                    &__text{
+                        float:none;
+                        width:100%;
+                        padding-top: 1rem;
+                        font-size: 0.9em;
+                    }
+                }    
+                                        
+            }
+        }
+    }
+
+}
+    
+
+

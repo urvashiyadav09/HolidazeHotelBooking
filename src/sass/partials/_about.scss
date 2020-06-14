@@ -1,0 +1,641 @@
+.about{
+    
+    &__heading{
+        padding-top: 3rem;
+
+        &--text{
+            font-family: $Headingfont-family;
+            font-size: 2.8em;
+            text-align: center;
+            word-spacing: 0.1rem; 
+        }        
+    }           
+    &__paragraph{
+        margin-left: 4rem;
+        margin-right: 4rem;
+        margin-top: 1rem;
+    }
+    
+}
+
+.hotelrooms{
+      
+    &__heading{
+        padding-left: 3rem;
+        padding-top: 2rem;
+
+        &--text{
+            font-family: $Headingfont-family;
+            font-size: 2.3em; 
+        }
+    }
+    &__roomsType{
+        position: relative;
+        margin-top: 2rem;
+        margin-left: 5rem;
+
+          &__img{
+            width: 100%;
+        }
+    }  
+        &__roomsTypePara{
+            font-weight: bold;
+            width: 50%;
+            height: 2rem;
+            position: absolute;
+            top: 80%;
+            left:30%;
+            text-align: center;
+
+            &--text{
+                font-family: $Sliderfont-family;
+                word-spacing: 0.3rem;
+                font-size: 2em;
+                font-weight: bold;
+                color:$sliderTextColor;
+            }   
+           
+        } 
+}
+
+
+.feedback{
+    display: inline-block;
+    padding-left: 3rem;
+    padding-top: 5rem;
+    margin-bottom: 2rem;
+    &__heading{
+        padding-left: 1rem;
+
+        &--text{
+            font-family: $Headingfont-family;
+            font-size: 2.3em;    
+        }
+        
+    }           
+    &__paragraph{
+        float: right;
+        width: 70%;
+        padding-right: 10rem;
+        margin-top: 5rem;
+        font-style: italic;
+    }
+    &__img{
+       padding-left: 5rem;
+       padding-top: 1rem;
+     }
+
+}
+
+/////////MEDIA QUERIES//////////////
+
+@media (max-width:1024px) {
+    .about{
+
+        &__heading{
+            padding-left: 0rem;
+            padding-top: 1rem;
+        } 
+        
+        &--text{
+            font-size: 1.8em;    
+        }
+
+        &__paragraph{
+            margin-left: 0rem;
+            margin-top: 0rem;
+            margin-right: 0;
+            padding-left: 1rem;
+            padding-right: 0.5rem;
+        }
+        &__img{
+            float: right; 
+            margin-right: 0rem;
+            width: 60%;
+            
+         }
+    
+    }
+    
+    .hotelrooms{
+
+        &__heading{
+            padding-left: 0rem;
+            padding-top: 1rem;
+
+            &--text{
+                font-size: 2.8em; 
+            }
+        }
+        &__roomsType{
+            position: relative;
+            margin-top: 1rem;
+            margin-left: 0rem;
+            
+              &__img{
+                width: 100%;
+            }
+        }  
+            &__roomsTypePara{
+                font-weight: bold;
+                width: 100%;
+                height: 2rem;
+                position: absolute;
+                top: 70%;
+                left:1%;
+                text-align: center;
+
+                &--text{ 
+                    font-size: 1.8em;
+                }
+               
+            } 
+    }
+    
+    
+    .feedback{
+        display: inline-block;
+        padding-left: 0rem;
+        padding-top: 2rem;
+        margin-bottom: 4rem;
+
+        &__heading{
+            padding-left: 1rem;
+
+            &--text{
+                font-size: 2.5em;    
+            } 
+            
+        }           
+        &__paragraph{
+            float: right;
+            width: 56%;
+            padding-right: 1rem;
+            margin-top: 0rem;
+        }
+        &__img{
+           padding-left: 1rem;
+           padding-top: 1rem;
+        }
+    }    
+}
+
+@media (max-width:768px) {
+    .about{
+    
+        &__heading{
+            padding-left: 0rem;
+            padding-top: 1rem;
+
+            &--text{
+                font-size: 2.2em;               
+             }
+        }           
+        &__paragraph{
+            margin-left: 0rem;
+            margin-top: 0rem;
+            margin-right: 0rem;
+            padding-left: 1rem;
+            padding-right: 0.5rem;
+        }
+    
+    }
+    
+    .hotelrooms{
+
+        &__heading{
+            padding-left: 0rem;
+            padding-top: 1rem;
+        }
+        &__roomsType{
+            position: relative;
+            margin-top: 1rem;
+            margin-left: 0rem;
+            
+              &__img{
+                width: 100%;
+            }
+        }  
+            &__roomsTypePara{
+                font-weight: bold;
+                width: 100%;
+                height: 2rem;
+                position: absolute;
+                top: 70%;
+                left:1%;
+                text-align: center;
+
+                &--text{ 
+                    font-size: 1.8em;
+                    font-weight: bold;
+                } 
+               
+            } 
+    }
+    
+    
+    .feedback{
+        display: inline-block;
+        padding-left: 0rem;
+        padding-top: 2rem;
+        margin-bottom: 4rem;
+
+        &__heading{
+            padding-left: 1rem;
+         
+            &--text{
+                font-size: 1.8em;    
+            }  
+            
+        }           
+        &__paragraph{
+            float: right;
+            width: 40%;
+            padding-right: 0.7rem;
+            margin-top: 0rem;
+        }
+        &__img{
+           padding-left: 1rem;
+           padding-top: 1rem;
+        }
+    }    
+
+}
+
+@media (max-width:414px) {
+    .about{
+        
+        &__heading{
+            padding-left: 0rem;
+            padding-top: 1rem;
+
+            &--text{
+                font-size: 1.8em;               
+            }  
+        }           
+        &__paragraph{
+            padding-left: 1rem;
+            padding-right: 0.5rem;
+            float: none;
+            width: 100%;
+            margin-left: 0rem;
+            margin-top: 0rem;
+        }
+    
+    }
+
+    .hotelrooms{
+           
+        &__heading{
+            padding-left: 0rem;
+            padding-top: 1rem;
+
+            &--text{
+                font-size: 1.8em; 
+            }
+        }
+        &__roomsType{
+            position: relative;
+            margin-top: 1rem;
+            margin-left: 0rem;
+            
+        }  
+            &__roomsTypePara{
+                font-weight: bold;
+                font-size: 1.2em;
+                width: 100%;
+                height: 2rem;
+                position: absolute;
+                top: 80%;
+                left:0%;
+                text-align: center;
+
+                &--text{ 
+                    font-size: 1.3em;
+                } 
+               
+            } 
+    }
+
+    .feedback{
+        display: block;
+        padding-left: 0rem;
+        padding-top: 2rem;
+        margin-bottom: 2rem;
+
+        &__heading{
+            padding-left: 1rem;
+
+            &--text{
+                font-size: 1.5em;    
+            }   
+            
+        }           
+        &__paragraph{
+            float: none;
+            width: 100%;
+            padding-right: 0.5rem;
+            padding-left: 1rem;
+            margin-top: 17rem;
+          
+        }
+        &__img{
+           padding-left: 0rem;
+           margin-left: 1.8rem;
+           padding-top: 0rem;
+           width: 82%;
+         }
+    
+    }
+}
+
+
+@media (max-width:411px) {
+
+    .about{
+        
+        display: block;
+
+        &__heading{
+            padding-left: 0rem;
+            padding-top: 2rem;
+
+            &--text{
+                font-size: 1.8em;               
+             }
+        }           
+        &__paragraph{
+          
+            float: none;
+            width: 100%;
+            margin-left: 0rem;
+            margin-top: 0rem;
+            padding-left: 1rem;
+            padding-right: 0.5rem;
+        }
+    
+    }
+
+    .hotelrooms{
+           
+        &__heading{
+            padding-left: 0rem;
+            padding-top: 1rem;
+
+            &--text{
+                font-size: 1.8em; 
+            }
+        }
+        &__roomsType{
+            position: relative;
+            margin-top: 1rem;
+            margin-left: 0rem;
+
+            &__img{
+                width: 95%;
+                margin-left: 0.5rem;
+            } 
+            
+        }  
+            &__roomsTypePara{
+                font-weight: bold;
+                font-size: 1.2em;
+                width: 100%;
+                height: 2rem;
+                position: absolute;
+                top: 75%;
+                left:0%;
+                text-align: center;
+
+                &--text{
+                    font-size: 1.2em;
+                } 
+               
+            } 
+    }
+
+    .feedback{
+        display: block;
+        padding-left: 0rem;
+        padding-top: 2rem;
+        margin-bottom: 2rem;
+
+        &__heading{
+            padding-left: 1rem;
+
+            &--text{
+                font-size: 1.5em;    
+            }  
+            
+        }           
+        &__paragraph{
+            float: none;
+            width: 100%;
+            padding-right: 0rem;
+            margin-top: 14rem;
+            padding-right: 0.5rem;
+            padding-left: 1rem;
+          
+        }
+        &__img{
+           padding-left: 3rem;
+           padding-top: 0rem;
+           width: 80%;
+         }
+    
+    }
+}
+
+//media query 2..............
+@media (max-width:360px) {
+    .about{
+        
+        &__heading{
+            padding-left: 0rem;
+            padding-top: 1rem;
+
+            &--text{
+               font-size: 1.5em;               
+            }  
+        }           
+        &__paragraph{
+            margin-left: 0rem;
+            margin-top: 1rem;
+            padding-left: 1rem;
+            padding-right: 0.5rem;
+        }
+        &__img{
+            float: none; 
+             margin-right: 1rem;
+             width: 100%;
+            
+         }
+    
+    }
+
+    .hotelrooms{
+           
+        &__heading{
+            padding-left: 1rem;
+            padding-top: 1rem;
+
+            &--text{
+                font-size: 1.8em; 
+            }
+        }
+        &__roomsType{
+            position: relative;
+            margin-top: 1rem;
+            margin-left: 0rem;
+
+            &__img{
+                width: 90%;
+                margin-left: 1rem;
+            }  
+            
+        }  
+            &__roomsTypePara{
+                font-weight: bold;
+                width: 100%;
+                height: 2rem;
+                position: absolute;
+                top: 70%;
+                left:0%;
+                text-align: center;
+
+                &--text{
+                   
+                    font-size: 1.2em;
+                    font-weight: bold;
+                } 
+               
+            } 
+    }
+
+    .feedback{
+        display: block;
+        padding-left: 0rem;
+        padding-top: 1.2rem;
+        margin-bottom: 2rem;
+
+        &__heading{
+            padding-left: 1rem;
+
+          &--text{
+            font-size: 1.5em;    
+        }  
+        }           
+        &__paragraph{
+            float: none;
+            width: 100%;
+            padding-right: 0.5rem;
+            padding-left: 1rem;
+            margin-top: 15rem;
+        }
+        &__img{
+           padding-left: 0rem;
+           margin-left: 1.2rem;
+           padding-top: 0rem;
+           width: 82%;
+         }
+    
+    }
+}
+
+//media query 1..............
+@media (max-width:320px) {
+    .about{
+        
+        &__heading{
+            padding-left: 0rem;
+            padding-top: 1rem;
+
+            &--text{
+               font-size: 1.5em;               
+            }  
+        }           
+        &__paragraph{
+            margin-left: 0rem;
+            margin-top: 1rem;
+            padding-left: 1rem;
+            padding-right: 0.5rem;
+        }
+        &__img{
+            float: none; 
+             margin-right: 1rem;
+             width: 100%;
+            
+         }
+    
+    }
+
+    .hotelrooms{
+           
+        &__heading{
+            padding-left: 1rem;
+            padding-top: 1rem;
+
+            &--text{
+                font-size: 1.8em; 
+            }
+        }
+        &__roomsType{
+            position: relative;
+            margin-top: 1rem;
+            margin-left: 0rem;
+
+            &__img{
+                width: 90%;
+                margin-left: 1rem;
+            }  
+            
+        }  
+            &__roomsTypePara{
+                font-weight: bold;
+                width: 100%;
+                height: 2rem;
+                position: absolute;
+                top: 70%;
+                left:0%;
+                text-align: center;
+
+                &--text{
+                   
+                    font-size: 1.2em;
+                    font-weight: bold;
+                } 
+               
+            } 
+    }
+
+    .feedback{
+        display: block;
+        padding-left: 0rem;
+        padding-top: 1.2rem;
+        margin-bottom: 2rem;
+
+        &__heading{
+            padding-left: 1rem;
+
+          &--text{
+            font-size: 1.5em;    
+        }  
+        }           
+        &__paragraph{
+            float: none;
+            width: 100%;
+            padding-right: 0.5rem;
+            padding-left: 1rem;
+            margin-top: 14rem;
+        }
+        &__img{
+           padding-left: 0rem;
+           margin-left: 1.2rem;
+           padding-top: 0rem;
+           width: 82%;
+         }
+    
+    }
+}
+
+

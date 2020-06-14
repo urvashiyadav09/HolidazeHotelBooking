@@ -1,0 +1,193 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Kaushan+Script&family=Libre+Baskerville:wght@700&family=Roboto+Slab&family=Roboto:wght@500&family=Source+Sans+Pro&display=swap');
+
+$Buttonfont-family: 'Amiri', serif;
+$logofont-family: 'Kaushan Script', cursive;
+$Sliderfont-family: 'Libre Baskerville', serif;
+$Paragraphfont-family: 'Source Sans Pro', sans-serif;
+$Headingfont-family: 'Roboto', sans-serif;
+$FormLabelfont-family: 'Roboto Slab', serif;
+
+
+.sliderHeading1{
+    font-family: $Sliderfont-family;
+    word-spacing: 0.3rem;
+    font-size: 1.2em;
+    color:$sliderTextColor;
+ }
+
+.sliderHeading2{
+    font-family: $Sliderfont-family;
+    word-spacing: 0.3rem;
+    font-size: 1.1em;
+    font-style: italic;
+    color:$sliderTextColor;
+    
+}
+
+.heading1{
+    font-family: $Headingfont-family;
+    font-size: 1em;
+}
+
+ .heading2{
+    font-family: $Headingfont-family;
+    font-size: 0.7em;
+}
+
+.heading3{
+    font-family: $Sliderfont-family;
+    word-spacing: 0.3rem;
+    font-size: 1.1em;
+    font-weight: bold;
+    color:$sliderTextColor;
+}
+
+.paragraph{
+    font-family: $Paragraphfont-family;
+    font-size: 1.1em;
+    word-spacing: 0.2rem;
+}
+
+.placeHolderText{
+    font-family: $Paragraphfont-family;
+    font-size: 1.1em;
+    word-spacing: 0.2rem; 
+}
+
+
+//////////MEDIA QUERIES//////////////
+
+@media (max-width:1024px) {
+    .heading1{
+        font-size: 1.5em;
+     } 
+
+    .heading2{
+        font-size: 0.8em;
+     } 
+     .paragraph{
+      font-size: 1.8em;
+        
+     }
+ 
+     .heading3{
+         font-size: 1.1em;
+     }
+ 
+ 
+     .sliderHeading1{
+         font-size: 1.5em;
+     }
+}
+
+@media (max-width:768px) {
+    .heading1{
+        font-size: 1.2em;
+     }
+     
+     .heading2{
+        font-size: 0.9em;
+     } 
+ 
+     .paragraph{
+      font-size: 1.3em;
+        
+     }
+ 
+     .heading3{
+         font-size: 1em;
+     }
+ 
+ 
+     .sliderHeading1{
+         font-size: 0.9em;
+     }
+
+}
+
+@media (max-width:414px) {
+    .heading1, .heading2{
+        font-size: 0.8em;
+     } 
+ 
+     .paragraph{
+      font-size: 1em;
+        
+     }
+ 
+     .heading3{
+         font-size: 0.9em;
+     }
+ 
+ 
+     .sliderHeading1{
+         font-size: 0.6em;
+     }
+}
+
+@media (max-width:411px) {
+    .heading1{
+        font-size: 0.8em;
+     } 
+
+    .heading2{
+        font-size: 0.6em;
+     } 
+     .paragraph{
+      font-size: 1em;
+        
+     }
+ 
+     .heading3{
+         font-size: 0.8em;
+     }
+ 
+ 
+     .sliderHeading1{
+         font-size: 0.6em;
+     }
+}
+
+
+
+@media (max-width:360px) {
+    .heading1, .heading2{
+       font-size: 0.8em;
+    } 
+
+    .paragraph{
+     font-size: 1em;
+       
+    }
+
+    .heading3{
+        font-size: 0.8em;
+    }
+
+
+    .sliderHeading1{
+        font-size: 0.4em;
+    }
+}
+
+@media (max-width:320px) {
+    .heading1, .heading2{
+       font-size: 0.6em;
+    } 
+
+    .heading3{
+        font-size: 0.8em;
+    }
+
+    .paragraph{
+     font-size: 0.9em;
+       
+    }
+
+    .sliderHeading1{
+        font-size: 0.4em;
+    }
+    
+}
+

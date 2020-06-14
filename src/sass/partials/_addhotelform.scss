@@ -1,0 +1,633 @@
+.AdminAddHotelMain{
+    &__img{
+        width: 100%;
+    }
+}
+
+
+.addHotel{
+    padding-left: 8rem;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+
+    &__Form{
+        background-color: $LoginFormBackgroundColor1;
+        background-image: linear-gradient(to top, $LoginFormBackgroundColor1, $LoginFormBackgroundColor2);
+        &__heading{
+            padding-bottom: 1rem;
+            padding-left: 1.5rem;
+            padding-top: 0.5rem;
+        }
+        
+        &__row1, &__row2, &__row3{
+            width: 95%;
+            padding-top: 1rem;
+            margin-left: 1rem;
+    
+            &__label1, &__label2, &__label3{
+                padding-top: 0.5rem;
+                padding-left: 3rem;
+                font-family: $Sliderfont-family;
+                font-size: 1em;
+                font-weight: bold;
+            }
+        }
+    
+        &__row4, &__row5{
+            width: 46.5%;
+            display: inline-block;
+            padding-top: 1rem;
+            margin-left: 1rem;
+    
+            &__label4, &__label5{
+                padding-top: 0.5rem;
+                padding-left: 3rem;
+                font-family: $Sliderfont-family;
+                font-size: 1em;
+                font-weight: bold;
+            }
+        }
+    
+        &__row6, &__row7{
+            width: 95%;
+            display: inline-block;
+            padding-top: 1rem;
+            margin-left: 1rem;
+    
+            &__label6,&__label7{
+                padding-top: 0.5rem;
+                padding-left: 3rem;
+                font-family: $Sliderfont-family;
+                font-size: 1em;
+                font-weight: bold;
+            }
+        }
+    
+        &__row8{
+            width: 95%;
+            display: inline-block;
+            padding-top: 1rem;
+            margin-left: 1rem;
+    
+            &__label8{
+                padding-left: 4rem;
+                font-family: $Sliderfont-family;
+                font-size: 1em;
+                font-weight: bold;
+            }
+        }
+        
+        &__btn{
+           margin-bottom: 2rem;
+           padding-bottom: 1rem;
+           margin-top: 2rem;
+           margin-left: 70%;
+           width: 30%;           
+        }
+    }  
+    
+}
+
+.displayedInfo{
+    width: 5%;
+    margin-left: 5rem;
+  
+    &__listGroup{
+        width: 60%;
+        text-align: center;
+        margin-left: 12rem;
+        margin-top: 5rem;
+        font-weight: bold;
+        font-family: $Headingfont-family;
+        font-size: 1em;
+        word-spacing: 0.1rem;
+    }
+  }
+  
+  /////Media Query////
+  @media (max-width:1024px) {
+        .addHotel{
+            padding-bottom: 0rem;
+            padding-left: 1rem;
+            padding-top: 2rem;
+
+            &__Form{
+                &__heading{
+                    padding-bottom: 1rem;
+                    padding-left: 2.5rem;
+                    padding-right: 1rem;
+                    padding-top: 0rem;
+                    
+                }
+
+                &__row1, &__row2, &__row3{
+                    margin-left: 0.5rem;
+            
+                    &__label1, &__label2, &__label3{
+                        padding-top: 0.5rem;
+                        padding-left: 0.5rem;
+                        font-size: 1em;
+                    }
+                }
+
+                &__row4, &__row5{
+                    width: 47%;
+                    padding-top: 1rem;
+                    margin-left: 0.5rem;
+            
+                    &__label4, &__label5{
+                        padding-top: 0.5rem;
+                        padding-left: 1rem;
+                        font-size: 1em;
+                    }
+                }
+
+                &__row6, &__row7{
+                    padding-top: 1rem;
+                    margin-left: 0.5rem;
+            
+                    &__label6,&__label7{
+                        padding-top: 0.5rem;
+                        padding-left: 0.5rem;
+                        font-size: 1em;
+                    }
+                }
+                
+                &__row8{
+                    padding-top: 1rem;
+                    margin-left: 0.5rem;
+            
+                    &__label8{
+                        padding-left: 2rem;
+                        font-size: 1em;
+                    }
+                }
+
+                &__btn{
+                    margin-bottom: 2rem;
+                    padding-bottom: 2rem;
+                    margin-left: 65%;           
+                }
+            }
+        } 
+        
+        .displayedInfo{
+            width: 100%;
+            margin-left: 5rem;
+          
+            &__listGroup{
+                width: 90%;
+                margin-left: 1rem;
+                margin-top: 5rem;
+                font-size: 1.3em;
+                
+            }
+          }
+        
+    }
+
+
+
+  @media (max-width:768px) {
+    .addHotel{
+        padding-bottom: 0rem;
+        padding-left: 1rem;
+        padding-top: 2rem;
+
+        &__Form{
+            &__heading{
+                padding-bottom: 1rem;
+                padding-left: 1rem;
+                padding-top: 0rem;
+            }
+
+            &__row1, &__row2, &__row3{
+                margin-left: 1rem;
+        
+                &__label1, &__label2, &__label3{
+                    padding-top: 0.5rem;
+                    padding-left: 1rem;
+                    font-size: 1.2em;
+                }
+            }
+
+            &__row4, &__row5{
+                width: 46%;
+                display: inline-block;
+                padding-top: 1rem;
+                margin-left: 1rem;
+        
+                &__label4, &__label5{
+                    padding-top: 0.5rem;
+                    padding-left: 1rem;
+                    font-size: 1.2em;
+                }
+            }
+
+            &__row6, &__row7{
+                width: 94%;
+                display: block;
+                padding-top: 0.5rem;
+                margin-left: 1rem;
+        
+                &__label6,&__label7{
+                    padding-top: 0.5rem;
+                    padding-left: 1rem;
+                    font-size: 1.2em;
+                }
+            }
+
+            &__row8{
+                width: 88%;
+                padding-top: 0.5rem;
+                margin-left: 1rem;
+        
+                &__label8{
+                    padding-top: 0.5rem;
+                    padding-left: 2rem;
+                    font-size: 1.2em;
+                }
+            }
+
+            &__btn{
+                width: 25%;
+                margin-bottom: 0rem;
+                margin-top: 1rem;
+                padding-bottom: 1rem;
+                margin-left: 70%;           
+            }
+        }
+    }
+    
+    .displayedInfo{
+        width: 100%;
+        margin-left: 0rem;
+        margin-bottom: 1rem;
+      
+        &__listGroup{
+            width: 100%;
+            text-align: center;
+            margin-left: 0rem;
+            margin-top: 1.8rem;
+            font-size: 1.2em;
+        }
+    }
+  }
+
+
+
+  @media (max-width:414px) {
+    .addHotel{
+        padding-bottom: 0rem;
+        padding-left: 1rem;
+        padding-top: 2rem;
+
+        &__Form{
+            &__heading{
+                padding-bottom: 1rem;
+                padding-left: 1rem;
+                padding-top: 0rem;
+            }
+
+            &__row1, &__row2, &__row3{
+                margin-left: 0.5rem;
+        
+                &__label1, &__label2, &__label3{
+                    padding-top: 0.5rem;
+                    padding-left: 0rem;
+                    font-size: 0.9em;
+                }
+            }
+
+            &__row4, &__row5{
+                width: 46%;
+                display: inline-block;
+                padding-top: 0.5rem;
+                margin-left: 0.5rem;
+        
+                &__label4, &__label5{
+                    padding-top: 0.5rem;
+                    padding-left: 0rem;
+                    font-size: 0.9em;
+                }
+            }
+
+            &__row6, &__row7{
+                width: 94%;
+                display: block;
+                padding-top: 0.5rem;
+                margin-left: 0.5rem;
+        
+                &__label6,&__label7{
+                    padding-top: 0.5rem;
+                    padding-left: 0rem;
+                    font-size: 0.9em;
+                }
+            }
+
+            &__row8{
+                width: 88%;
+                padding-top: 0.5rem;
+                margin-left: 1rem;
+        
+                &__label8{
+                    padding-top: 0.5rem;
+                    padding-left: 1rem;
+                    font-size: 0.9em;
+                }
+            }
+
+            &__btn{
+                width: 45%;
+                margin-bottom: 0rem;
+                margin-top: 1rem;
+                padding-bottom: 1rem;
+                margin-left: 50%;           
+            }
+        }
+    }
+    
+    .displayedInfo{
+        width: 100%;
+        margin-left: 0rem;
+        margin-bottom: 1rem;
+      
+        &__listGroup{
+            width: 100%;
+            text-align: center;
+            margin-left: 0rem;
+            margin-top: 1.5rem;
+            font-size: 1em;
+        }
+    }
+  }
+
+
+
+
+
+  @media (max-width:411px) {
+        .addHotel{
+            padding-bottom: 0rem;
+            padding-left: 1rem;
+            padding-top: 2rem;
+
+            &__Form{
+                &__heading{
+                    padding-bottom: 1rem;
+                    padding-left: 1rem;
+                    padding-top: 0rem;
+                }
+
+                &__row1, &__row2, &__row3{
+                    margin-left: 0.5rem;
+            
+                    &__label1, &__label2, &__label3{
+                        padding-top: 0.5rem;
+                        padding-left: 0rem;
+                        font-size: 0.9em;
+                    }
+                }
+
+                &__row4, &__row5{
+                    width: 46%;
+                    display: inline-block;
+                    padding-top: 0.5rem;
+                    margin-left: 0.5rem;
+            
+                    &__label4, &__label5{
+                        padding-top: 0.5rem;
+                        padding-left: 0rem;
+                        font-size: 0.9em;
+                    }
+                }
+
+                &__row6, &__row7{
+                    width: 94%;
+                    display: block;
+                    padding-top: 0.5rem;
+                    margin-left: 0.5rem;
+            
+                    &__label6,&__label7{
+                        padding-top: 0.5rem;
+                        padding-left: 0rem;
+                        font-size: 0.9em;
+                    }
+                }
+
+                &__row8{
+                    width: 88%;
+                    padding-top: 0.5rem;
+                    margin-left: 1rem;
+            
+                    &__label8{
+                        padding-top: 0.5rem;
+                        padding-left: 1rem;
+                        font-size: 0.9em;
+                    }
+                }
+
+                &__btn{
+                    width: 45%;
+                    margin-bottom: 0rem;
+                    margin-top: 1rem;
+                    padding-bottom: 1rem;
+                    margin-left: 50%;           
+                }
+            }
+        }
+        
+        .displayedInfo{
+            width: 100%;
+            margin-left: 0rem;
+            margin-bottom: 1rem;
+          
+            &__listGroup{
+                width: 100%;
+                text-align: center;
+                margin-left: 0rem;
+                margin-top: 1rem;
+                font-size: 1em;
+            }
+        }
+    }
+
+
+  @media (max-width:360px) {
+        .addHotel{
+            padding-bottom: 0rem;
+            padding-left: 1rem;
+            padding-top: 2rem;
+
+                &__Form{
+                    &__heading{
+                        padding-bottom: 1rem;
+                        padding-left: 1rem;
+                        padding-top: 0rem;
+                    }
+
+                    &__row1, &__row2, &__row3{
+                        margin-left: 0.5rem;
+                
+                        &__label1, &__label2, &__label3{
+                            padding-top: 0.5rem;
+                            padding-left: 0rem;
+                            font-size: 0.9em;
+                        }
+                    }
+
+                    &__row4, &__row5{
+                        width: 88%;
+                        display: block;
+                        padding-top: 0.5rem;
+                        margin-left: 0.5rem;
+                
+                        &__label4, &__label5{
+                            padding-top: 0.5rem;
+                            padding-left: 0rem;
+                            font-size: 0.9em;
+                        }
+                    }
+
+                    &__row6, &__row7{
+                        width: 88%;
+                        display: block;
+                        padding-top: 0.5rem;
+                        margin-left: 0.5rem;
+                
+                        &__label6,&__label7{
+                            padding-top: 0.5rem;
+                            padding-left: 0rem;
+                            font-size: 0.9em;
+                        }
+                    }
+
+                    &__row8{
+                        width: 88%;
+                        padding-top: 0.5rem;
+                        margin-left: 0.5rem;
+                
+                        &__label8{
+                            padding-top: 0.5rem;
+                            padding-left: 1rem;
+                            font-size: 0.9em;
+                        }
+                    }
+
+                    &__btn{
+                        width: 45%;
+                        margin-bottom: 0rem;
+                        margin-top: 1rem;
+                        padding-bottom: 1rem;
+                        margin-left: 50%;           
+                    }
+                }    
+            }    
+        
+            .displayedInfo{
+            width: 100%;
+            margin-left: 0rem;
+            margin-bottom: 1rem;
+            
+            &__listGroup{
+                width: 100%;
+                text-align: center;
+                margin-left: 0rem;
+                margin-top: 1rem;
+                font-size: 0.9em;
+            }
+        }
+    }
+
+
+
+
+
+  @media (max-width:320px) {
+    .addHotel{
+        padding-bottom: 0rem;
+        padding-left: 1rem;
+        padding-top: 2rem;
+
+        &__Form{
+            &__heading{
+                padding-bottom: 1rem;
+                padding-left: 1rem;
+                padding-top: 0rem;
+            }
+
+            &__row1, &__row2, &__row3{
+                margin-left: 0.5rem;
+        
+                &__label1, &__label2, &__label3{
+                    padding-top: 0.5rem;
+                    padding-left: 0rem;
+                    font-size: 0.9em;
+                }
+            }
+
+            &__row4, &__row5{
+                width: 88%;
+                display: block;
+                padding-top: 0.5rem;
+                margin-left: 0.5rem;
+        
+                &__label4, &__label5{
+                    padding-top: 0.5rem;
+                    padding-left: 0rem;
+                    font-size: 0.9em;
+                }
+            }
+
+            &__row6, &__row7{
+                width: 88%;
+                display: block;
+                padding-top: 0.5rem;
+                margin-left: 0.5rem;
+        
+                &__label6,&__label7{
+                    padding-top: 0.5rem;
+                    padding-left: 0rem;
+                    font-size: 0.9em;
+                }
+            }
+
+            &__row8{
+                width: 88%;
+                padding-top: 0.5rem;
+                margin-left: 0.5rem;
+        
+                &__label8{
+                    padding-top: 0.5rem;
+                    padding-left: 1rem;
+                    font-size: 0.9em;
+                }
+            }
+
+            &__btn{
+                width: 45%;
+                margin-bottom: 0rem;
+                margin-top: 1rem;
+                padding-bottom: 1rem;
+                margin-left: 50%;           
+             }
+        }    
+    }    
+  
+    .displayedInfo{
+      width: 100%;
+      margin-left: 0rem;
+      margin-bottom: 1rem;
+    
+      &__listGroup{
+          width: 100%;
+          text-align: center;
+          margin-left: 0rem;
+          margin-top: 1rem;
+          font-size: 0.9em;
+      }
+    }
+  
+}
+
+     

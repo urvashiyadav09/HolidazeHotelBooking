@@ -1,0 +1,42 @@
+.formBtn{
+    background-color: $header-backgroundColor;
+    color: #FFFFFF;
+    border: none;
+    font-family: $Paragraphfont-family;
+    font-weight: bold;
+    font-size: 1.2em;
+    letter-spacing: 0.1rem;
+    width: 25%;
+    height: 2.3rem;;
+    text-align: center;
+}
+
+
+.formBtn:focus{
+    box-shadow: none;
+}
+
+
+@media (max-width:768px) {
+    .formBtn{
+        font-size: 1.2em;
+         width: 25%;
+    }
+    
+}
+
+@media (max-width:414px) {
+    .formBtn{
+        font-size: 1em;
+         width: 30%;
+    }
+    
+}
+
+@media (max-width:320px) {
+    .formBtn{
+        font-size: 1em;
+         width: 30%;
+    }
+    
+}

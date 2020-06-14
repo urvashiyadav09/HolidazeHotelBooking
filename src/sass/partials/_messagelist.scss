@@ -1,0 +1,227 @@
+.allMessages{
+    border:4px solid $ContainerBorderColor;
+    background: $ContainerBackgroundColor;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+
+    &__heading{
+        padding-bottom: 2rem;
+        &--headingMain{
+            font-family: $Headingfont-family;
+            font-size: 2em;
+        }
+    }
+
+    &__groupCard{
+          display: inline-block;
+
+          &__groupCardDisplay{
+            background: $cardBackgroundColor;
+            border: none;
+            margin-top: 2rem;
+            margin-left: 5rem;
+            width:35%;
+            height: 15rem;
+            float: left;
+
+            &--text{
+                font-family: $Paragraphfont-family;
+                word-spacing: 0.2rem;
+                font-size: 1.1em; 
+                color: $sliderTextColor;  
+            }
+        }
+    }
+}
+
+
+////Media Query//////
+@media (max-width:1024px) {
+    .allMessages{
+        padding-top: 1rem;
+        padding-bottom: 14rem;
+    
+        &__heading{
+            padding-bottom: 1rem;
+
+            &--headingMain{
+              font-size: 2.5em;
+            }
+        }
+    
+        &__groupCard{
+               
+            &__groupCardDisplay{
+                margin-top: 2rem;
+                margin-left: 1.1rem;
+                width:47%;
+                height: 16rem;
+               
+    
+                &--text{
+                   font-size: 1.5em; 
+                   
+                }
+            }
+        }
+    } 
+}
+
+
+@media (max-width:768px) {
+    .allMessages{
+        padding-top: 1rem;
+        padding-bottom: 4rem;
+    
+        &__heading{
+            padding-bottom: 1rem;
+
+            &--headingMain{
+              font-size: 1.7em;
+            }
+        }
+    
+        &__groupCard{
+               
+            &__groupCardDisplay{
+                margin-top: 2rem;
+                margin-left: 1rem;
+                width:46.5%;
+                height: 15rem;
+               
+    
+                &--text{
+                   font-size: 1.2em; 
+                   
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:414px) {
+    .allMessages{
+         padding-top: 1rem;
+        padding-bottom: 4rem;
+    
+        &__heading{
+            padding-bottom: 1rem;
+
+            &--headingMain{
+                font-size: 1.5em;
+            }
+        }
+    
+        &__groupCard{
+              display: block;
+    
+              &__groupCardDisplay{
+                margin-top: 1rem;
+                margin-left: 0rem;
+                width:100%;
+                height: 12rem;
+                float: none;
+    
+                &--text{
+                    font-size: 1em;  
+                }
+            }
+        }
+    }       
+}
+
+@media (max-width:411px) {
+    .allMessages{
+        padding-top: 1rem;
+        padding-bottom: 4rem;
+
+        &__heading{
+            padding-bottom: 1rem;
+
+            &--headingMain{
+                font-size: 1.3em;
+            }
+        }
+    
+        &__groupCard{
+             display: block;
+    
+              &__groupCardDisplay{
+                margin-top: 1rem;
+                margin-left: 0rem;
+                width:100%;
+                float: none;
+    
+                &--text{
+                    font-size: 1em; 
+                }
+            }
+        }
+    } 
+}
+
+@media (max-width:360px) {
+    .allMessages{
+        padding-top: 1rem;
+           
+        &__heading{
+            padding-bottom: 1rem;
+
+            &--headingMain{
+                font-size: 1.2em;
+            }
+        }
+    
+        &__groupCard{
+             display: block;
+    
+              &__groupCardDisplay{
+                margin-top: 1rem;
+                margin-left: 0rem;
+                width:100%;
+                height: 16rem;
+                float: none;
+    
+                &--text{
+                    font-size: 1em; 
+                }
+            }
+        }
+    } 
+}
+
+@media (max-width:320px) {
+    .allMessages{
+        padding-top: 1rem;
+           
+        &__heading{
+            padding-bottom: 1rem;
+
+            &--headingMain{
+                font-size: 1.2em;
+            }
+        }
+    
+        &__groupCard{
+             display: block;
+    
+              &__groupCardDisplay{
+                margin-top: 1rem;
+                margin-left: 0rem;
+                width:100%;
+                float: none;
+    
+                &--text{
+                    font-size: 1em; 
+                }
+            }
+        }
+    }
+   
+} 
+
+
+
+
+
+

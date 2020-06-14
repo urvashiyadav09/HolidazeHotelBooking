@@ -1,0 +1,39 @@
+.addedAllHotels{
+
+    &__Heading{
+        padding-top: 4rem;
+        padding-bottom: 1rem;
+    }
+
+    &__Hotelgroup{
+               
+        &__groupHotelDisplay{
+            margin-left:4rem;
+            margin-top: 2rem;
+            height: 50%;
+            background: $cardBackgroundColor;
+            border: none;
+            width: 85%;
+            &__displayDiv{
+            padding-bottom: 1.3rem;
+               display: inline-block;
+                
+            &__img{
+                max-height: 100%;
+                max-width: 35%;
+                float:left;
+                overflow:hidden;
+            }
+            &__text{
+                float:right;
+                width:60%;
+                text-align: left;
+                color: $sliderTextColor;
+                
+            }
+      
+        }
+
+    }
+    }
+}

@@ -1,0 +1,63 @@
+@import "partials/variables";
+
+@import "partials/fonts";
+
+@import "partials/header";
+
+@import "partials/footer";
+
+@import "partials/slider";
+
+@import "partials/button";
+
+@import "partials/addformbutton";
+
+@import "partials/about";
+
+@import "partials/hotels";
+
+@import "partials/specifichoteldetail";
+
+@import "partials/services";
+
+@import "partials/modal";
+
+@import "partials/formbtn";
+
+@import "partials/contact";
+
+@import "partials/adminloginform";
+
+@import "partials/addhotelform";
+
+@import "partials/addedhotellist";
+
+@import "partials/enqurieslist";
+
+@import "partials/messagelist";
+
+
+
+
+
+  body{
+      margin: 0;
+      padding: 0;
+  }
+  .container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .row{
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .col{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  
+  

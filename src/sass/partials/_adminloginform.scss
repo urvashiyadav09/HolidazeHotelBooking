@@ -1,0 +1,249 @@
+.adminLoginForm{
+    width: 70% ;
+    margin-top: 12rem ;
+    margin-bottom: 15.9rem ;
+    margin-left: 12rem;
+    background-color: $AddHotelFormBackgroundColor1;
+    background-image: linear-gradient(to top, $AddHotelFormBackgroundColor1, $AddHotelFormBackgroundColor2);
+
+    &__heading{
+        padding-left: 4rem;
+        padding-top: 1rem;
+
+        &--text{
+          font-family: $Headingfont-family;
+          font-size: 2.3em;;
+        }
+    }
+
+    &__textBox{
+         width: 85%;
+         padding-left: 6rem;
+         padding-top: 2rem;
+        &--label{
+            font-weight: bold;
+            margin-top: 5rem;
+            font-family: $Sliderfont-family;
+            font-size: 1em;
+        }
+    }
+
+    &__Button{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+            
+    }
+}
+
+///MEDIA QUERY///////
+@media (max-width:1024px) {
+
+    .adminLoginForm{
+      width: 96%;
+      margin-top: 16rem ;
+      margin-bottom: 37.5rem ;
+      margin-left: 1rem;
+     
+      &__heading{
+          padding-left: 1rem;
+          padding-top: 1rem;
+
+          &--text{
+           font-size: 2.3em;;
+          }
+        }
+
+      &__textBox{
+          width: 85%;
+          padding-left: 1rem;
+          padding-top: 2rem;
+
+          &--label{
+              margin-top: 5rem;
+              font-size: 1em;
+          }
+      }
+
+      &__Button{
+          padding-top: 2rem;
+          padding-bottom: 1rem;
+          
+        }
+  }
+
+}
+
+@media (max-width:768px) {
+
+  .adminLoginForm{
+    width: 94%;
+    margin-top: 14rem ;
+    margin-bottom: 19rem ;
+    margin-left: 1rem;
+   
+    &__heading{
+        padding-left: 1rem;
+        padding-top: 1rem;
+
+        &--text{
+         font-size: 2.3em;;
+        }
+      }
+
+    &__textBox{
+        width: 85%;
+        padding-left: 1rem;
+        padding-top: 2rem;
+
+        &--label{
+            margin-top: 5rem;
+            font-size: 1em;
+        }
+    }
+
+    &__Button{
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+      }
+}
+
+}
+
+@media (max-width:414px) {
+
+    .adminLoginForm{
+      width: 100%;
+      margin-top: 5rem;
+      margin-bottom: 9.8rem;
+      margin-left: 0rem;
+    
+      &__heading{
+          padding-left: 1rem;
+          padding-top: 1rem;
+
+          &--text{
+          font-size: 2em;;
+          }
+        }
+
+      &__textBox{
+          width: 90%;
+          padding-left: 1rem;
+          padding-top: 1rem;
+
+          &--label{
+              font-size: 0.8em;
+          }
+      }
+
+      &__Button{
+          padding-top: 2rem;
+          padding-bottom: 1rem;
+        }
+    }
+}
+
+
+
+
+@media (max-width:411px) {
+
+  .adminLoginForm{
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 15rem;
+    margin-left: 0rem;
+  
+    &__heading{
+        padding-left: 1rem;
+        padding-top: 1rem;
+
+        &--text{
+        font-size: 2em;;
+        }
+      }
+
+    &__textBox{
+        width: 90%;
+        padding-left: 1rem;
+        padding-top: 1rem;
+
+        &--label{
+            font-size: 0.8em;
+        }
+    }
+
+    &__Button{
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+      }
+}
+}
+
+@media (max-width:360px) {
+
+  .adminLoginForm{
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 0rem;
+  
+    &__heading{
+        padding-left: 1rem;
+        padding-top: 1rem;
+
+        &--text{
+        font-size: 2em;;
+        }
+      }
+
+    &__textBox{
+        width: 90%;
+        padding-left: 1rem;
+        padding-top: 1rem;
+
+        &--label{
+            font-size: 0.8em;
+        }
+    }
+
+    &__Button{
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+      }
+}
+}
+
+@media (max-width:320px) {
+
+  .adminLoginForm{
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 8rem;
+    margin-left: 0rem;
+  
+    &__heading{
+        padding-left: 1rem;
+        padding-top: 1rem;
+
+        &--text{
+        font-size: 2em;;
+        }
+      }
+
+    &__textBox{
+        width: 90%;
+        padding-left: 1rem;
+        padding-top: 1rem;
+
+        &--label{
+            font-size: 0.8em;
+        }
+    }
+
+    &__Button{
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+      }
+}
+}

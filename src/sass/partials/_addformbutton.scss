@@ -1,0 +1,65 @@
+.addformBtn{
+    background-color: $header-backgroundColor;
+    color: $sliderTextColor;
+    border: none;
+    font-family: $Paragraphfont-family;
+    font-weight: bold;
+    font-size: 1.2em;
+    letter-spacing: 0.1rem;
+    width: 55%;
+    height: 2.3rem;;
+    text-align: center;
+}
+
+
+.addformBtn:focus{
+    box-shadow: none;
+}
+
+
+
+@media (max-width:1024px) {
+    .addformBtn{
+        font-size: 1.2em;
+         width: 80%;
+    }
+    
+}
+@media (max-width:768px) {
+    .addformBtn{
+        font-size: 1.2em;
+         width: 80%;
+    }
+    
+}
+
+@media (max-width:414px) {
+    .addformBtn{
+        font-size: 1em;
+         width: 55%;
+    }
+    
+}
+
+@media (max-width:375px) {
+    .addformBtn{
+        font-size: 1em;
+         width: 80%;
+    }
+    
+}
+@media (max-width:360px) {
+    .addformBtn{
+        font-size: 1em;
+         width: 80%;
+    }
+    
+}
+
+@media (max-width:320px) {
+    .addformBtn{
+        font-size: 1em;
+         width: 80%;
+    }
+    
+}
