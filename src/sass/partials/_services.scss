@@ -23,8 +23,8 @@
         margin-right: 4rem;
         margin-top: 3rem;
         border: none;
-        background: $ActivitiesCardColor1;
-        background-image: linear-gradient(to top, $ActivitiesCardColor1, $ActivitiesCardColor2);
+        background: $ActivitiesCardColor;
+        border: 2px solid $ActivitiesCardBorderColor;
         height: 28rem;
 
         &__paragraph{

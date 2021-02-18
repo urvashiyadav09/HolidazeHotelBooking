@@ -5,3 +5,4 @@ export const headers = {
     key: KEY,
 };
 export const DELETE = "DELETE";
+export const PATCH = "PATCH";

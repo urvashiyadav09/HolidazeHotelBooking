@@ -36,7 +36,7 @@
 
 @import "partials/messagelist";
 
-
+@import "partials/inlinemessages";
 
 
 
@@ -47,11 +47,12 @@
   .container-fluid{
     padding-left: 0;
     padding-right: 0;
+    //border:1px solid red;
   }
   .row{
     margin-left: 0;
     margin-right: 0;
-    width: 100%;
+    //width: 100%;
   }
 
   .col{

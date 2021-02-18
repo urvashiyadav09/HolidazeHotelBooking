@@ -9,10 +9,12 @@
     padding-left: 8rem;
     padding-top: 4rem;
     padding-bottom: 3rem;
+    margin-bottom: 2rem;
 
     &__Form{
-        background-color: $LoginFormBackgroundColor1;
-        background-image: linear-gradient(to top, $LoginFormBackgroundColor1, $LoginFormBackgroundColor2);
+        background-color: $ActivitiesCardColor;
+        border:1px solid $ActivitiesCardBorderColor;
+        
         &__heading{
             padding-bottom: 1rem;
             padding-left: 1.5rem;
@@ -101,10 +103,172 @@
         font-family: $Headingfont-family;
         font-size: 1em;
         word-spacing: 0.1rem;
+        
+
+        &--listGroupItem{
+            background-color: $ActivitiesCardColor;
+            color: $hotelDetailBtnBackgrond;
+            border: 1px solid $ActivitiesCardBorderColor;
+        }
+
+        &--listGroupItem:hover{
+            background-color:$ContainerBackgroundColor;
+        }
+
     }
   }
+
+  
   
   /////Media Query////
+  @media (max-width:1440px) {
+    .addHotel{
+        padding-bottom: 0rem;
+        padding-left: 3rem;
+        padding-top: 2rem;
+
+        &__Form{
+            &__heading{
+                padding-bottom: 1rem;
+                padding-left: 2.5rem;
+                padding-right: 1rem;
+                padding-top: 0rem;
+                
+            }
+
+            &__row1, &__row2, &__row3{
+                margin-left: 0.5rem;
+        
+                &__label1, &__label2, &__label3{
+                    padding-top: 0.5rem;
+                    padding-left: 0.5rem;
+                    font-size: 1em;
+                }
+            }
+
+            &__row4, &__row5{
+                width: 45%;
+                padding-top: 1rem;
+                margin-left: 0.5rem;
+        
+                &__label4, &__label5{
+                    padding-top: 0.5rem;
+                    padding-left: 1rem;
+                    font-size: 1em;
+                }
+
+                &__labelGuest{
+                    padding-right: 0;
+                    padding-left: 0;
+                }
+            }
+
+            &__row6, &__row7{
+                padding-top: 1rem;
+                margin-left: 0.5rem;
+        
+                &__label6,&__label7{
+                    padding-top: 0.5rem;
+                    padding-left: 0.5rem;
+                    font-size: 1em;
+                }
+            }
+            
+            &__row8{
+                padding-top: 1rem;
+                margin-left: 0.5rem;
+        
+                &__label8{
+                    padding-left: 2rem;
+                    font-size: 1em;
+                }
+            }
+
+            &__btn{
+                margin-bottom: 2rem;
+                padding-bottom: 2rem;
+                margin-left: 65%;           
+            }
+        }
+    }   
+  }
+
+
+  @media (max-width:1280px) {
+    .addHotel{
+        padding-bottom: 0rem;
+        padding-left: 3rem;
+        padding-top: 2rem;
+
+        &__Form{
+            &__heading{
+                padding-bottom: 1rem;
+                padding-left: 2.5rem;
+                padding-right: 1rem;
+                padding-top: 0rem;
+                
+            }
+
+            &__row1, &__row2, &__row3{
+                margin-left: 0.5rem;
+        
+                &__label1, &__label2, &__label3{
+                    padding-top: 0.5rem;
+                    padding-left: 0.5rem;
+                    font-size: 1em;
+                }
+            }
+
+            &__row4, &__row5{
+                width: 45%;
+                padding-top: 1rem;
+                margin-left: 0.5rem;
+        
+                &__label4, &__label5{
+                    padding-top: 0.5rem;
+                    padding-left: 1rem;
+                    font-size: 1em;
+                }
+
+                &__labelGuest{
+                    padding-right: 0;
+                    padding-left: 0;
+                }
+            }
+
+            &__row6, &__row7{
+                padding-top: 1rem;
+                margin-left: 0.5rem;
+        
+                &__label6,&__label7{
+                    padding-top: 0.5rem;
+                    padding-left: 0.5rem;
+                    font-size: 1em;
+                }
+            }
+            
+            &__row8{
+                padding-top: 1rem;
+                margin-left: 0.5rem;
+        
+                &__label8{
+                    padding-left: 2rem;
+                    font-size: 1em;
+                }
+            }
+
+            &__btn{
+                margin-bottom: 2rem;
+                padding-bottom: 2rem;
+                margin-left: 65%;           
+            }
+        }
+    }   
+  }
+
+
+
+
   @media (max-width:1024px) {
         .addHotel{
             padding-bottom: 0rem;

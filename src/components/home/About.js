@@ -18,7 +18,7 @@ return(
           
           <div className="about__paragraph">
             <Paragraph>
-            Holidaze is a good choice for travellers/nature-lovers to find accommodation in Bergen, Norway. Bergen is the gateway of fjords and its centre is famous for freshly cooked sea-food. We provide B&BQ’s food, staying from wooden guest houses on the beach to luxurious hotels. Our listed hotels/ guest houses are perfect choice for your next family trip or business trip. Experience first class service, on-site dining options, parking, complementary high-speed internet and state of art conference rooms. Our hotels are best rated hotels. You would not find a better value than Holidaze for you vacation, meeting and social occasions. 
+            Holidaze is a good choice for travellers/nature-lovers to find accommodation in Bergen, Norway. Bergen is the gateway of fjords and its centre is famous for freshly cooked sea-food. We provide B&BQ’s food, staying from wooden guest houses on the beach to luxurious hotels. Our listed hotels/guest houses are perfect choice for your next family trip or business trip. Experience first class service, on-site dining options, parking, complementary high-speed internet and state of art conference rooms. Our hotels are best rated hotels. You would not find a better value than Holidaze for you vacation, meeting and social occasions. 
           </Paragraph>
         </div>
       </div>

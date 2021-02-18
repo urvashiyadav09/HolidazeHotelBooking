@@ -5,12 +5,13 @@ import { AuthContextProvider } from "../context/AuthContext";
 import AdminNav from "./AdminNav";
 import Home from "../home/Home";
 import Hotels from "../hotels/Hotels";
-import HotelDetails from "../hotels/HotelDetails"
+import HotelDetails from "../hotels/HotelDetails";
 import Services from "../services/Services";
 import Contact from "../contact/Contact";
 import AdminLogin from "../admin/AdminLogin";
 import AdminDashboard from "../adminadd/AdminDashboard";
 import HotelList from "../adminadd/HotelList";
+import EditHotel from "../adminadd/EditHotel";
 import EnquiryList from "../adminadd/EnquiryList";
 import MessageList from "../adminadd/MessageList";
 import ProtectedRoute from "../routes/ProtectedRoute";
@@ -32,6 +33,7 @@ return (
       <Route path="/admin" component={AdminLogin} />
       <ProtectedRoute path="/adminadd" exact component={AdminDashboard} />
       <ProtectedRoute path="/adminadd/HotelList" exact component={HotelList} />
+      <ProtectedRoute path="/adminadd/HotelList/Edit/:id" exact component={EditHotel} />
       <ProtectedRoute path="/adminadd/EnquiryList" exact component={EnquiryList} />
       <ProtectedRoute path="/adminadd/MessageList" exact component={MessageList} />
 

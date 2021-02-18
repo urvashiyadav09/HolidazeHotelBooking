@@ -6,11 +6,8 @@ import Container from "react-bootstrap/Container";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
-
 import HotelSearch from "./HotelSearch";
-
-
-
+import Button from "react-bootstrap/Button";
 
 
 function AllHotels() {
@@ -34,7 +31,7 @@ function AllHotels() {
             .catch((error) => console.log(error))
             .finally(() => setLoading(false));
         // eslint-disable-next-line
-    }, []);
+    }, [url, options]);
 
     if (loading) {
         return <Spinner animation="border" variant="info" size="xl" role="status" className="loadingSpinner"/>;
@@ -79,10 +76,12 @@ function AllHotels() {
 
                     <Col lg={12}>    
                     <div className="allHotels__Hotelgroup">
-                       
+                        console.log("hi line 79");
                         {searchHotels.map(((hotel) => {
+                            console.log("hi line 83");
                             
                             return ( 
+                                
                                 
                                 <Card key={hotel.id} className="allHotels__Hotelgroup__groupHotelDisplay">
                                  
@@ -95,13 +94,11 @@ function AllHotels() {
 
                                             <div className="allHotels__Hotelgroup__groupHotelDisplay__displayDiv__text">
                                                 <Card.Title><span className="allHotels__Hotelgroup__groupHotelDisplay__displayDiv__text--textFont"><b>{hotel.name}</b></span></Card.Title>
-                                                <Card.Title><span className="allHotels__Hotelgroup__groupHotelDisplay__displayDiv__text--textFont">{hotel.email}</span></Card.Title>
+                                                <Card.Text><span className="allHotels__Hotelgroup__groupHotelDisplay__displayDiv__text--textFont">{hotel.description}</span></Card.Text>
                                                 <Card.Text><span className="allHotels__Hotelgroup__groupHotelDisplay__displayDiv__text--textFont"><b>Price:&nbsp;</b>{hotel.price}</span></Card.Text>
                                                 <Card.Text><span className="allHotels__Hotelgroup__groupHotelDisplay__displayDiv__text--textFont"><b>Max Guests allowed:&nbsp;</b>{hotel.maxGuests}</span></Card.Text>
-                                                <Card.Text><span className="allHotels__Hotelgroup__groupHotelDisplay__displayDiv__text--textFont">{hotel.description}</span></Card.Text>
-                                                <Card.Title><span className="allHotels__Hotelgroup__groupHotelDisplay__displayDiv__text--textFont">{hotel.address}</span></Card.Title>
-                                                
-                                                <NavLink to={"/hotel/" + hotel.id}><span className="allHotels__Hotelgroup__groupHotelDisplay__displayDiv__text--detailLink">See Details</span></NavLink>
+                                            
+                                                <NavLink to={"/hotel/" + hotel.id}><Button type="submit" className="hotelDetailBtn">See Details</Button></NavLink>
                                                 
                                                 
                                             </div>

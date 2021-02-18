@@ -1,0 +1,21 @@
+.successMessage{
+    color:$ContainerBorderColor;
+    font-size: 1.2em;
+    text-align: center;
+    font-family: $headerfont-family;
+}
+
+.successDeleteMessage{
+    color:$ContainerBorderColor;
+    font-size: 1.2em;
+    text-align: center;
+    font-family: $headerfont-family;
+    padding-top: 20rem;
+    padding-bottom: 27rem;
+}
+
+.errorpara{
+    color:$errorMessagesColor;
+    font-family: $Paragraphfont-family;
+    font-size: 1em;
+}

@@ -15,6 +15,31 @@
     box-shadow: none;
 }
 
+.srchBtn:hover{
+    background-color:$ContainerBorderColor !important;
+}
+.hotelDetailBtn{
+    background-color: $hotelDetailBtnBackgrond;
+    color: $sliderTextColor;
+    border: 1px solid $hotelDetailBtnBorder;
+    font-size: 0.9em;
+    font-family: $Headingfont-family;
+    letter-spacing: 0.1rem;
+    width: 40%;
+    height: 2.3rem;;
+    text-align: center; 
+    margin-top: 1rem;
+}
+
+.hotelDetailBtn:focus{
+    box-shadow: none;
+}
+
+.hotelDetailBtn:hover{
+    background-color:$ContainerBorderColor !important;
+    border: none;
+}
+
 .detailBtn{
     background-color: $cardButtonBackgroundColor;
     color: $cardButtonTextColor;
@@ -31,6 +56,11 @@
 
 .detailBtn:focus{
     box-shadow: none;
+}
+
+.detailBtn:hover{
+    background-color:$ContainerBorderColor !important;
+    border: none;
 }
 
 .loginBtn{
@@ -50,10 +80,14 @@
     box-shadow: none;
 }
 
-.logoutBtn{
-    background-color: $cardButtonBackgroundColor;
-    color: $cardButtonTextColor;
+.loginBtn:hover{
+    background-color:$ContainerBorderColor !important;
     border: none;
+}
+
+.logoutBtn{
+    background-color: $hotelDetailBtnBackgrond;
+    border: 1px solid $hotelDetailBtnBorder;
     font-size: 1em;
     font-family: $Headingfont-family;
     letter-spacing: 0.1rem;
@@ -67,7 +101,66 @@
 .logoutBtn:focus{
     box-shadow: none;
 }
+.updateHotel{
+    background-color: $header-backgroundColor;
+    color: $sliderTextColor;
+    border: none;
+    font-size: 1em;
+    font-family: $Headingfont-family;
+    letter-spacing: 0.1rem;
+    width: 12%;
+    height: 2.3rem;;
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem; 
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+} 
 
+.updateHotel:focus{
+    box-shadow: none;
+}
+
+.updateHotel:hover{
+    background-color:$ContainerBorderColor !important;
+    border: none;
+}
+
+.deleteHotel{
+    background-color: $cardButtonBackgroundColor;
+    color: $sliderTextColor;
+    border: none;
+    font-size: 1em;
+    font-family: $Headingfont-family;
+    letter-spacing: 0.1rem;
+    width: 12%;
+    height: 2.3rem;;
+    text-align: center;  
+    margin-bottom: 2rem; 
+    margin-right: 2rem; 
+    margin-top: 2rem;
+}
+
+.deleteHotel:focus{
+    box-shadow: none;
+}
+
+.deleteHotel:hover{
+    background-color:$errorMessagesColor !important;
+    border: none;
+}
+
+.goBackAdminHotel{
+    font-size: 1em;
+    font-weight: bold;
+    color: $hotelEditLinkColor;
+    font-family: $Buttonfont-family;
+    padding-left: 32rem;
+}
+
+.goBackAdminHotel:hover{
+    color:$hotelDetailBtnBackgrond !important;
+}
 
 
 @media (max-width:1024px) {
@@ -100,6 +193,24 @@
         font-size: 1.2em;
     }
     
+    .updateHotel{    
+        width: 25%;
+        margin-left: 1rem;
+        margin-right: 1rem; 
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    } 
+
+    .deleteHotel{
+      width: 25%;
+      margin-bottom: 1rem; 
+      margin-right: 0rem; 
+      margin-top: 1rem;
+    }
+  
+    .goBackAdminHotel{
+       padding-left: 10rem;
+    }
 }
 
 @media (max-width:768px) {
@@ -130,7 +241,24 @@
         width: 28%;
         font-size: 1.2em;
     }
-    
+    .updateHotel{    
+        width: 25%;
+        margin-left: 1rem;
+        margin-right: 1rem; 
+        margin-bottom: 0rem;
+        margin-top: 1rem;
+    } 
+
+    .deleteHotel{
+      width: 25%;
+      margin-bottom: 0rem; 
+      margin-right: 0rem; 
+      margin-top: 1rem;
+    }
+  
+    .goBackAdminHotel{
+       padding-left: 5rem;
+    }
 }
 
 @media (max-width:414px) {
@@ -187,6 +315,26 @@
         margin-left: 0.5rem;
         margin-top: 0.9rem;
     }
+
+    .updateHotel{    
+        width: 35%;
+        margin-left: 1rem;
+        margin-right: 1rem; 
+        margin-bottom: 0rem;
+        margin-top: 1rem;
+    } 
+
+    .deleteHotel{
+      width: 35%;
+      margin-bottom: 0rem; 
+      margin-right: 0rem; 
+      margin-top: 1rem;
+    }
+  
+    .goBackAdminHotel{
+       padding-left: 1.5rem;
+       margin-top: 2rem;
+    }
     
 }
 
@@ -215,6 +363,26 @@
         margin-left: 0.5rem;
         margin-top: 0.9rem;
     }
+
+    .updateHotel{    
+        width: 35%;
+        margin-left: 1rem;
+        margin-right: 1rem; 
+        margin-bottom: 0rem;
+        margin-top: 1rem;
+    } 
+
+    .deleteHotel{
+      width: 35%;
+      margin-bottom: 0rem; 
+      margin-right: 0rem; 
+      margin-top: 1rem;
+    }
+  
+    .goBackAdminHotel{
+       padding-left: 1.5rem;
+       margin-top: 2rem;
+    }
     
 }
 
@@ -242,6 +410,26 @@
     .logoutBtn{
         margin-left: 0.5rem;
         margin-top: 0.9rem;
+    }
+
+    .updateHotel{    
+        width: 35%;
+        margin-left: 1rem;
+        margin-right: 1rem; 
+        margin-bottom: 0rem;
+        margin-top: 1rem;
+    } 
+
+    .deleteHotel{
+      width: 35%;
+      margin-bottom: 0rem; 
+      margin-right: 0rem; 
+      margin-top: 1rem;
+    }
+  
+    .goBackAdminHotel{
+       padding-left: 1.5rem;
+       margin-top: 2rem;
     }
     
 }

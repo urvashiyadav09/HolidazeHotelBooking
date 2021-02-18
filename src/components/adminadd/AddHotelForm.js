@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import AddFormButton from "./AddFormButton";
 import * as yup from "yup";
 import Form from "react-bootstrap/Form";
@@ -11,11 +11,11 @@ import Heading from "../layout/Heading";
 import Container from "react-bootstrap/Container";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-
+import ErrorParagraph from "../layout/ErrorParagraph";
 
 
 const schema = yup.object().shape(  {
-    name: yup.string().required("First name is required"),
+    name: yup.string().required("Hotel name is required"),
     email: yup.string(),
     image: yup.string(),
     price:yup.number().default(1),
@@ -36,6 +36,7 @@ function AddHotel() {
 
     const history = useHistory();
 
+    const [addedHotel, setAddedHotel] = useState(false);
     
 
     async function onSubmit (data,e){
@@ -49,7 +50,7 @@ function AddHotel() {
         
         e.target.reset();
         history.push("/adminadd");
-        
+        setAddedHotel(true);
 
     }
 
@@ -59,6 +60,8 @@ function AddHotel() {
                 <Col lg={6} className="addHotel">
                     <Form onSubmit = {handleSubmit (onSubmit)}  className="addHotel__Form">
 
+                    
+
                     <div className="addHotel__Form__heading">
                         <Heading subtitle="Please Fill the form to add the new hotel into the list." />
                     </div>
@@ -66,11 +69,11 @@ function AddHotel() {
                         <div className="addHotel__Form__row1">
                             <Form.Group as={Row}>
                                 <Col sm="3">
-                                    <Form.Label className="addHotel__Form__row1__label1">Full Name</Form.Label>
+                                    <Form.Label className="addHotel__Form__row1__label1">Hotel Name</Form.Label>
                                 </Col>
                                 <Col sm="9">
-                                    <Form.Control name="name" placeholder="Enter your full name" ref={register} />
-                                    {errors.name && <p>{errors.name.message}</p>}
+                                    <Form.Control name="name" placeholder="Enter hotel name" ref={register} className="placeHolderText"/>
+                                    {errors.name && <ErrorParagraph>{errors.name.message}</ErrorParagraph>}
                                 </Col>
                                 
                              </Form.Group>
@@ -82,7 +85,7 @@ function AddHotel() {
                                     <Form.Label className="addHotel__Form__row2__label2">Email</Form.Label>
                                 </Col>
                                 <Col sm="9">
-                                    <Form.Control name="email" placeholder="Enter your email" ref={register} />
+                                    <Form.Control name="email" placeholder="Enter hotel email address" ref={register} className="placeHolderText"/>
                                 </Col>    
                             </Form.Group>
                         </div>
@@ -94,7 +97,7 @@ function AddHotel() {
                                 </Col>
  
                                 <Col sm="9">
-                                    <Form.Control name="image" placeholder="Please enter url of image" ref={register} />
+                                    <Form.Control name="image" placeholder="Please enter url of image" ref={register} className="placeHolderText"/>
                                 </Col>    
                             </Form.Group>
                         </div>
@@ -107,7 +110,7 @@ function AddHotel() {
                                 </Col>
  
                                 <Col sm="7">
-                                    <Form.Control name="price" placeholder="price" ref={register} />
+                                    <Form.Control name="price" placeholder="Price" ref={register} className="placeHolderText"/>
                                 </Col>    
                             </Form.Group>
                         </div>
@@ -119,7 +122,7 @@ function AddHotel() {
                                 </Col>
  
                                 <Col sm="5">
-                                <Form.Control name="maxGuests" placeholder="maxGuests" ref={register} />
+                                <Form.Control name="maxGuests" placeholder="MaxGuests" ref={register} className="placeHolderText"/>
                                 </Col>    
                             </Form.Group>
                         </div>
@@ -131,7 +134,7 @@ function AddHotel() {
                                 </Col>
  
                                 <Col sm="7">
-                                    <Form.Control name="lat" placeholder="Latitude" ref={register} />
+                                    <Form.Control name="lat" placeholder="Latitude" ref={register} className="placeHolderText"/>
                                 </Col>    
                             </Form.Group>
                        </div>
@@ -143,7 +146,7 @@ function AddHotel() {
                                 </Col>
  
                                 <Col sm="6">
-                                    <Form.Control name="lang" placeholder="Langitude" ref={register} />
+                                    <Form.Control name="lang" placeholder="Langitude" ref={register} className="placeHolderText"/>
                                 </Col>    
                             </Form.Group>
                        </div> 
@@ -155,7 +158,7 @@ function AddHotel() {
                                 </Col>
  
                                 <Col sm="9">
-                                    <Form.Control as="textarea" rows="" name="description" placeholder="Please enter description of the hotel" ref={register} />
+                                    <Form.Control as="textarea" rows="" name="description" placeholder="Please enter description of the hotel" ref={register} className="placeHolderText"/>
                                 </Col>    
                             </Form.Group>
                         </div>
@@ -167,22 +170,32 @@ function AddHotel() {
                                 </Col>
  
                                 <Col sm="9">
-                                    <Form.Control as="textarea" rows="2" name="address"  placeholder="Please enter the address of hotel" ref={register} />
+                                    <Form.Control as="textarea" rows="2" name="address"  placeholder="Please enter the address of hotel" ref={register} className="placeHolderText"/>
                                 </Col>    
                             </Form.Group>
                         </div>
 
                         <div className="addHotel__Form__row8">
-                            <Form.Group as={Row}>
-                                <Col sm="3">
-                                <Form.Check label="Selfcatering" name="selfCatering" className="addHotel__Form__row8__label8"/>
+                        <Form.Group as={Row}>
+                            <Col sm="3">
+                                <Form.Label className="addHotel__Form__row7__label7">Self Catering</Form.Label>
                             </Col>
-                         </Form.Group>
-                        </div>         
+
+                            <Col sm="3">
+                                <Form.Control as="select" ref={register}>
+                                    <option value="true">Yes</option>
+                                    <option value="false">No</option>
+                                </Form.Control>
+
+                            </Col>
+                        </Form.Group>
+                    </div>                 
 
                         <div className="addHotel__Form__btn">
                         <span className="addHotel__Form__btn--addFormbtn"><AddFormButton type="submit" onClick={() => reset()}>Add Hotel</AddFormButton></span>
-                        </div>    
+                        </div>  
+
+                        {addedHotel ? <p className="successMessage">Hotel is added successfully!</p> : (null)}  
                         
                         </Form>
                 </Col> 
@@ -192,15 +205,15 @@ function AddHotel() {
 
                 <ListGroup className="displayedInfo__listGroup">
                     <NavLink to="/adminadd/HotelList">
-                        <ListGroup.Item>Added Hotel list</ListGroup.Item>
+                        <ListGroup.Item className="displayedInfo__listGroup--listGroupItem">Added Hotel list</ListGroup.Item>
                     </NavLink>
 
                     <NavLink to="/adminadd/EnquiryList">
-                        <ListGroup.Item>Received Enquiry List</ListGroup.Item>
+                        <ListGroup.Item className="displayedInfo__listGroup--listGroupItem">Received Enquiry List</ListGroup.Item>
                     </NavLink>
 
                     <NavLink to="/adminadd/MessageList">
-                        <ListGroup.Item>Received Messages List</ListGroup.Item>
+                        <ListGroup.Item className="displayedInfo__listGroup--listGroupItem">Received Messages List</ListGroup.Item>
                     </NavLink>
 
               </ListGroup>

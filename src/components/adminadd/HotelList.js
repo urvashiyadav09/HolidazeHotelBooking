@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import { BASE_URL, headers} from "../../constants/Constants";
+import { NavLink } from "react-router-dom";
 import Spinner from "react-bootstrap/Spinner";
 import Container from "react-bootstrap/Container";
 import Row from 'react-bootstrap/Row';
@@ -63,13 +64,17 @@ function HotelList() {
 
                                             <div className="allHotels__Hotelgroup__groupHotelDisplay__displayDiv__text">
                                                 <Card.Text><span className="allHotels__Hotelgroup__groupHotelDisplay__displayDiv__text--textFont"><b>Hotel Name:&nbsp;</b>{hotel.name}</span></Card.Text>
+                                                <Card.Text><span className="allHotels__Hotelgroup__groupHotelDisplay__displayDiv__text--textFont">{hotel.address}</span></Card.Text>
                                                 <Card.Text><span className="allHotels__Hotelgroup__groupHotelDisplay__displayDiv__text--textFont">{hotel.email}</span></Card.Text>
                                                 <Card.Text><span className="allHotels__Hotelgroup__groupHotelDisplay__displayDiv__text--textFont"><b>Price:&nbsp;</b>{hotel.price}</span></Card.Text>
                                                 <Card.Text><span className="allHotels__Hotelgroup__groupHotelDisplay__displayDiv__text--textFont"><b>Max Guests allowed:&nbsp;</b>{hotel.maxGuests}</span></Card.Text>
                                                 <Card.Text><span className="allHotels__Hotelgroup__groupHotelDisplay__displayDiv__text--textFont"><b>Latitude:&nbsp;</b>{hotel.lat}</span></Card.Text>
                                                 <Card.Text><span className="allHotels__Hotelgroup__groupHotelDisplay__displayDiv__text--textFont"><b>Langitude:&nbsp;</b>{hotel.lat}</span></Card.Text>
                                                 <Card.Text><span className="allHotels__Hotelgroup__groupHotelDisplay__displayDiv__text--textFont">{hotel.description}</span></Card.Text>
-                                                <Card.Text><span className="allHotels__Hotelgroup__groupHotelDisplay__displayDiv__text--textFont">{hotel.address}</span></Card.Text>
+                                                
+                                                <Card.Text><span className="allHotels__Hotelgroup__groupHotelDisplay__displayDiv__text--textFont">{hotel.selfCatering}</span></Card.Text>
+
+                                                <NavLink to={"/adminadd/HotelList/Edit/" + hotel.id}><span className="allHotels__Hotelgroup__groupHotelDisplay__displayDiv__text--EditHotel">Edit Hotel&nbsp;&#9654;</span></NavLink>
                                             </div>
                                             
                                         </Card.Body>

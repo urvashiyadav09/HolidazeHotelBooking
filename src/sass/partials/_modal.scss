@@ -31,9 +31,9 @@
 .enquiryPopup{
 
     &__buttonModal{
-        background-color: $cardButtonBackgroundColor;
-        color: $cardButtonTextColor;
-        border: none;
+        background-color: $hotelDetailBtnBackgrond;
+        color: $sliderTextColor;
+        border: 1px solid $hotelDetailBtnBorder;
         font-size: 1em;
         font-family: $Headingfont-family;
         letter-spacing: 0.1rem;
@@ -46,16 +46,21 @@
     &__buttonModal:focus{
         box-shadow: none;
     }
+    &__buttonModal:hover{
+        background-color:$ContainerBorderColor !important;
+        border: none;
+    }
+
 }
 
 .sendenquiry{
-    background-color: $cardButtonBackgroundColor;
-    color: $cardButtonTextColor;
-    border: none;
+    background-color: $hotelDetailBtnBackgrond;
+    color: $sliderTextColor;
+    border: 2px solid $hotelDetailBtnBorder;
     font-size: 1em;
     font-family: $Headingfont-family;
     letter-spacing: 0.1rem;
-    width: 30%;
+    width: 34%;
     height: 2.2rem;
     text-align: center;
     margin-top: 0rem;
@@ -65,12 +70,16 @@
     box-shadow: none;
 }
 
+.sendenquiry:hover{
+    background-color:$ContainerBorderColor !important;
+    border: none;
+}
 
 
 .cancelmodal{
-    background-color: $cardButtonBackgroundColor;
-    color: $cardButtonTextColor;
-    border: none;
+    background-color: $hotelDetailBtnBackgrond;
+    color: $sliderTextColor;
+    border: 2px solid $hotelDetailBtnBorder;
     font-size: 1em;
     font-family: $Headingfont-family;
     letter-spacing: 0.1rem;
@@ -78,7 +87,7 @@
     height: 2.2rem;
     text-align: center;
     margin-top: 1rem;
-    margin-left: 18rem; 
+   // margin-left: 18rem; 
 }
 .cancelmodal:focus{
     box-shadow: none;

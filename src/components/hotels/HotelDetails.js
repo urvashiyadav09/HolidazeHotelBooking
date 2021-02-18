@@ -59,13 +59,11 @@ function HotelDetails() {
                                         </div>    
                                             <div className="hotelDetails__Hotelgroup__groupHotelDisplay__displayDiv__text">
                                                 <Card.Text><span className="hotelDetails__Hotelgroup__groupHotelDisplay__displayDiv__text--textFont"><b>Hotel Name:&nbsp;</b>{hotelDetail.name}</span></Card.Text>
-                                                <Card.Text><span className="hotelDetails__Hotelgroup__groupHotelDisplay__displayDiv__text--textFont">{hotelDetail.email}</span></Card.Text>
+                                                <Card.Text><span className="hotelDetails__Hotelgroup__groupHotelDisplay__displayDiv__text--textFont"><b>{hotelDetail.address}</b></span></Card.Text>
+                                                <Card.Text><span className="hotelDetails__Hotelgroup__groupHotelDisplay__displayDiv__text--textFont"><b>Email:&nbsp;</b>{hotelDetail.email}</span></Card.Text>
                                                 <Card.Text><span className="hotelDetails__Hotelgroup__groupHotelDisplay__displayDiv__text--textFont"><b>Price:&nbsp;</b>{hotelDetail.price}</span></Card.Text>
                                                 <Card.Text><span className="hotelDetails__Hotelgroup__groupHotelDisplay__displayDiv__text--textFont"><b>Max Guests allowed:&nbsp;</b>{hotelDetail.maxGuests}</span></Card.Text>
-                                                <Card.Text><span className="hotelDetails__Hotelgroup__groupHotelDisplay__displayDiv__text--textFont"><b>Latitude:&nbsp;</b>{hotelDetail.lat}</span></Card.Text>
-                                                <Card.Text><span className="hotelDetails__Hotelgroup__groupHotelDisplay__displayDiv__text--textFont"><b>Langitude:&nbsp;</b>{hotelDetail.lat}</span></Card.Text>
                                                 <Card.Text><span className="hotelDetails__Hotelgroup__groupHotelDisplay__displayDiv__text--textFont">{hotelDetail.description}</span></Card.Text>
-                                                <Card.Text><span className="hotelDetails__Hotelgroup__groupHotelDisplay__displayDiv__text--textFont">{hotelDetail.address}</span></Card.Text>
                                             </div>
                                                 
                                                 <EnquiryModal id={hotelDetail.id}/>

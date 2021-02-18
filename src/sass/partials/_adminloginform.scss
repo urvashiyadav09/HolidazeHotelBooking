@@ -1,18 +1,20 @@
 .adminLoginForm{
     width: 70% ;
-    margin-top: 12rem ;
+    margin-top: 11.7rem ;
     margin-bottom: 15.9rem ;
     margin-left: 12rem;
-    background-color: $AddHotelFormBackgroundColor1;
-    background-image: linear-gradient(to top, $AddHotelFormBackgroundColor1, $AddHotelFormBackgroundColor2);
+    border:1px solid $ActivitiesCardBorderColor;
+    background-color: $ActivitiesCardColor;
 
     &__heading{
         padding-left: 4rem;
         padding-top: 1rem;
 
         &--text{
-          font-family: $Headingfont-family;
-          font-size: 2.3em;;
+          font-family: $Sliderfont-family;
+          font-size: 1.6em;
+          color: $logoColor;
+          padding-top: 1rem;
         }
     }
 

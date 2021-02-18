@@ -19,17 +19,17 @@ const EnquiryModal = ({ id }) => {
         <>
             <div className="enquiryPopup">
                 <Button className="enquiryPopup__buttonModal" onClick={displayModal}>
-                    Send Enquiry
+                    Book Hotel
                 </Button>
                 <Modal show={modal} onHide={hideModal} aria-labelledby="contained-modal-title-vcenter" centered className="Modal">
-                    <Modal.Header className="enquiryPopup__heading">
-                        <Modal.Title>Send an enquiry to the Hotel....</Modal.Title>
+                    <Modal.Header className="enquiryPopup__heading" closeButton>
+                        <Modal.Title>Hotel Booking</Modal.Title>
                     </Modal.Header>
 
                     <Modal.Body>
                         
-                        <EnquiryModalForm id={id} />
-                            <Button className="cancelmodal" onClick={hideModal}>Cancel</Button>
+                        <EnquiryModalForm id={id}/>
+                           
                     </Modal.Body>
 
                     

@@ -4,19 +4,19 @@ import { useHistory } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
 import * as yup from "yup";
 import Form from "react-bootstrap/Form";
-import Paragraph from "../layout/Paragraph";
 import Container from "react-bootstrap/Container";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import ErrorParagraph from "../layout/ErrorParagraph";
 
 const schema = yup.object().shape({
     email: yup
         .string()
-        .required("Please enter your valid email"),
+        .required("Please enter your valid email address."),
    password: yup
         .string()
-        .required("Please enter your valid password")
+        .required("Please enter your valid password.")
 });
 
 function AdminLogin() {
@@ -44,7 +44,7 @@ function AdminLogin() {
                     <Form onSubmit={handleSubmit(onSubmit)} className="adminLoginForm">
 
                             <div className="adminLoginForm__heading">
-                                <h1 className="adminLoginForm__heading--text">Login&nbsp;!!</h1>
+                                <h1 className="adminLoginForm__heading--text">Holidaze Admin&nbsp;!!</h1>
                             </div>
          
                             <div className="adminLoginForm__textBox">
@@ -54,8 +54,8 @@ function AdminLogin() {
                                     </Col> 
 
                                     <Col sm="9">   
-                                        <Form.Control name="email" type="text" placeholder="Enter your email" ref={register} />
-                                        {errors.email && <Paragraph>{errors.email.message}</Paragraph>}
+                                        <Form.Control name="email" type="text" placeholder="Enter your email" ref={register} className="placeHolderText"/>
+                                        {errors.email && <ErrorParagraph>{errors.email.message}</ErrorParagraph>}
                                     </Col>    
                                 </Form.Group>
                             </div>
@@ -67,8 +67,8 @@ function AdminLogin() {
                                     </Col> 
 
                                     <Col sm="9">   
-                                        <Form.Control name="password" type="password" placeholder="Enter your password" ref={register} />
-                                        {errors.password && <Paragraph>{errors.password.message}</Paragraph>}
+                                        <Form.Control name="password" type="password" placeholder="Enter your password" ref={register} className="placeHolderText"/>
+                                        {errors.password && <ErrorParagraph>{errors.password.message}</ErrorParagraph>}
                                     </Col>    
                                 </Form.Group>
                             </div>

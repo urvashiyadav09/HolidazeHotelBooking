@@ -3,9 +3,12 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import PropTypes from "prop-types";
 
-function HotelSearch({findHotel}){
-    const [searchValue, setSearchValue] = useState("");
 
+
+function HotelSearch({findHotel}){
+    
+    const [searchValue, setSearchValue] = useState("");
+    
     function updatedValue (event){
         setSearchValue(event.target.value);
 
@@ -17,7 +20,7 @@ function HotelSearch({findHotel}){
             <div className="HotelsSearch__searchForm">
                 <Form>
                     <Form.Group>
-                        <Form.Control className="HotelsSearch__searchForm--label" value = {searchValue} onChange={updatedValue} type="text" placeholder="Search hotel...." />
+                        <Form.Control className="HotelsSearch__searchForm--label"  value = {searchValue} onChange={updatedValue} onKeyUp={updatedValue} type="text" placeholder="Search hotel...." />
                     </Form.Group>
                 </Form>
             </div>

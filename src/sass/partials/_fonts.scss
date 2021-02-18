@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Kaushan+Script&family=Libre+Baskerville:wght@700&family=Roboto+Slab&family=Roboto:wght@500&family=Source+Sans+Pro&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@800&display=swap');
+
+$headerfont-family: 'Muli', sans-serif;
+
 $Buttonfont-family: 'Amiri', serif;
 $logofont-family: 'Kaushan Script', cursive;
 $Sliderfont-family: 'Libre Baskerville', serif;
@@ -19,8 +23,8 @@ $FormLabelfont-family: 'Roboto Slab', serif;
 .sliderHeading2{
     font-family: $Sliderfont-family;
     word-spacing: 0.3rem;
-    font-size: 1.1em;
-    font-style: italic;
+    font-size: 1em;
+    //font-style: italic;
     color:$sliderTextColor;
     
 }
@@ -57,6 +61,57 @@ $FormLabelfont-family: 'Roboto Slab', serif;
 
 
 //////////MEDIA QUERIES//////////////
+@media (max-width:1440px) {
+    .heading1{
+        font-size: 1.5em;
+     } 
+
+    .heading2{
+        font-size: 0.8em;
+     } 
+     .paragraph{
+      font-size: 1.3em;
+        
+     }
+ 
+     .heading3{
+         font-size: 1.1em;
+     }
+ 
+ 
+     .sliderHeading1{
+         font-size: 1em;
+     }
+     .sliderHeading2{
+        font-size: 0.9em;      
+    }
+}
+
+@media (max-width:1280px) {
+    .heading1{
+        font-size: 1.5em;
+     } 
+
+    .heading2{
+        font-size: 0.8em;
+     } 
+     .paragraph{
+      font-size: 1.3em;
+        
+     }
+ 
+     .heading3{
+         font-size: 1.1em;
+     }
+ 
+ 
+     .sliderHeading1{
+         font-size: 1em;
+     }
+     .sliderHeading2{
+        font-size: 0.9em;      
+    }
+}
 
 @media (max-width:1024px) {
     .heading1{

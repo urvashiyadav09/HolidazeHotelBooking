@@ -62,13 +62,17 @@
                     word-spacing: 0.2rem;
                     font-size: 1.1em; 
                     color: $sliderTextColor;
-                    
-                    &--detailLink{
+
+                    &--EditHotel{
+                        color: $hotelEditLinkColor;
                         font-weight: bold;
-                        color: $cardButtonTextColor;
-                        font-family: $Headingfont-family;
-                        letter-spacing: 0.1rem;
+                        font-size: 1.2em;
+                        letter-spacing: 0.05rem;
                     }
+                    &--EditHotel:hover{
+                        color:$hotelDetailBtnBackgrond;
+                    }
+
                 }
         
             }
@@ -77,7 +81,6 @@
     }
     
 }
-
 
 ///MEDIA QUERY/////////
 @media (max-width:1024px) {
